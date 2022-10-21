@@ -26,9 +26,5 @@ let animali = [
     }
 ]
 
-const mammiferiEl = animali.filter(checkClass);
-
-function checkClass(animali) {
-    return animali.classe == "benzina";
-}
-console.log(mammiferiEl)
+const mammiferiEl = animali.filter(animali => animali.classe === 'mammiferi')
+console.log(mammiferiEl);
